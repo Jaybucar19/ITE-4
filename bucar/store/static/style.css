@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://wallpapercave.com/wp/wp10100966.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(0, 144, 163);
+    position: fixed;
+}
+
+.logo{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', 'Helvetica';
+
+}
+
+.nav {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 144, 163);
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #012f35;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+
+.main-content{
+    width: 100%;
+    padding: 250px 0;
+    top: 50%;
+    text-align: center;
+    color: skyblue;
+}
+
+.main-content h1{
+    font-size: 100px;
+}
+
+.main-content p{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.main-btn{
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid #0892a4;
+    border-radius: 25px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+span{
+    background-color: black;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.main-btn:hover span{
+    width: 100%;
+    z-index: -1;
+}
+
+.about{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(165, 190, 238);
+
+}
+
+.about .row{
+    padding: 100px 50px 100px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+
+}
+
+.about h3{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.about h2{
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.about p{
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.Product {
+    margin: none;
+    padding: 20px 0;
+    background-color: pink;
+    
+}
+
+.Product .content{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.Product .content h3{
+    width: 30%;
+    margin: auto;
+    padding: 5px;
+    border: 2px solid #034f59;
+    border-radius: 25px;
+}
+
+.Product .content h2{
+    margin: 35px 0 20px 0;
+}
+
+.Product .content-grid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.Product .item{
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #07c8e1;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.Product .item:hover{
+    box-shadow: 5px 5px 25px -10px;
+    cursor: pointer;
+}
+
+footer{
+    /* height: 50px; */
+    background-color: rgb(0, 144, 163);
+    text-align: center;
+}
+
+.footer p{
+    padding: 20px 0px 20px 0px;
+    color: #fff;
+    font-family: 'Poppins', 'Helvetica';
+}
+
+.item-btn{
+    margin-top: 20px;
+    background-color: rgb(167, 236, 245);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form-control{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    background: white;
+}
